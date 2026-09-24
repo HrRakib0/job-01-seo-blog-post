@@ -1,0 +1,57 @@
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" rx="16" fill="url(#bgGrad2)"/>
+  
+  <text x="400" y="50" text-anchor="middle" fill="#34d399" font-family="Arial, sans-serif" font-weight="bold" font-size="14" letter-spacing="2">INFOGRAPHIC: HOME WORKOUT FOR BEGINNERS</text>
+  <text x="400" y="85" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="24">Foundational Bodyweight Routine</text>
+
+  <!-- 4 Step Boxes -->
+  <g transform="translate(60, 120)">
+    <!-- Box 1 -->
+    <rect x="0" y="0" width="150" height="230" rx="10" fill="rgba(255,255,255,0.08)" stroke="#34d399" stroke-width="1.5"/>
+    <circle cx="75" cy="45" r="24" fill="#34d399"/>
+    <text x="75" y="52" text-anchor="middle" fill="#064e3b" font-family="Arial, sans-serif" font-weight="bold" font-size="16">1</text>
+    <text x="75" y="105" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="15">Warm-Up</text>
+    <text x="75" y="135" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">5 Minutes</text>
+    <text x="75" y="155" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Arm Circles</text>
+    <text x="75" y="175" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Torso Twists</text>
+    <text x="75" y="195" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">March in Place</text>
+
+    <!-- Box 2 -->
+    <rect x="175" y="0" width="150" height="230" rx="10" fill="rgba(255,255,255,0.08)" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="250" cy="45" r="24" fill="#38bdf8"/>
+    <text x="250" y="52" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-weight="bold" font-size="16">2</text>
+    <text x="250" y="105" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="15">Strength</text>
+    <text x="250" y="135" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Air Squats (10x)</text>
+    <text x="250" y="155" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Wall Push-ups (8x)</text>
+    <text x="250" y="175" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Knee Plank (20s)</text>
+    <text x="250" y="195" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Glute Bridges (10x)</text>
+
+    <!-- Box 3 -->
+    <rect x="350" y="0" width="150" height="230" rx="10" fill="rgba(255,255,255,0.08)" stroke="#fbbf24" stroke-width="1.5"/>
+    <circle cx="425" cy="45" r="24" fill="#fbbf24"/>
+    <text x="425" y="52" text-anchor="middle" fill="#78350f" font-family="Arial, sans-serif" font-weight="bold" font-size="16">3</text>
+    <text x="425" y="105" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="15">Cardio</text>
+    <text x="425" y="135" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">15 Minutes</text>
+    <text x="425" y="155" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Brisk Walking</text>
+    <text x="425" y="175" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Light Jogging</text>
+    <text x="425" y="195" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Dance Workout</text>
+
+    <!-- Box 4 -->
+    <rect x="525" y="0" width="150" height="230" rx="10" fill="rgba(255,255,255,0.08)" stroke="#f472b6" stroke-width="1.5"/>
+    <circle cx="600" cy="45" r="24" fill="#f472b6"/>
+    <text x="600" y="52" text-anchor="middle" fill="#831843" font-family="Arial, sans-serif" font-weight="bold" font-size="16">4</text>
+    <text x="600" y="105" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="bold" font-size="15">Cool Down</text>
+    <text x="600" y="135" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">5 Minutes</text>
+    <text x="600" y="155" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Leg Stretches</text>
+    <text x="600" y="175" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Shoulder Relief</text>
+    <text x="600" y="195" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Deep Breathing</text>
+  </g>
+
+  <text x="400" y="388" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Alt: Step-by-step home workout for beginners featuring basic bodyweight exercises</text>
+</svg>

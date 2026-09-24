@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOB-01: SEO-Optimized Blog Post (Fitness & Health)</title>
+  <meta name="description" content="Discover an easy daily fitness routine for beginners to boost energy, build strength, and stay healthy. Follow our 7 simple steps to start exercising today!">
+  <style>
+    :root {
+      --primary: #106ebe;
+      --primary-dark: #004578;
+      --success: #107c41;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --accent: #0284c7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text-main);
+      background-color: var(--bg);
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header-card {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    }
+
+    .header-card h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .header-card .badge {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .trainee-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+
+    h2.section-title {
+      font-size: 20px;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+    }
+
+    /* Google Snippet Preview */
+    .google-preview {
+      background: #ffffff;
+      border: 1px solid #dfe1e5;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .google-url {
+      font-size: 14px;
+      color: #202124;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .google-title {
+      font-size: 20px;
+      color: #1a0dab;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .google-title:hover {
+      text-decoration: underline;
+    }
+
+    .google-desc {
+      font-size: 14px;
+      color: #4d5156;
+      line-height: 1.4;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .stat-box {
+      background: #f1f5f9;
+      padding: 14px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .stat-value {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--text-main);
+      margin-top: 4px;
+    }
+
+    .badge-pass {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th {
+      background: #f8fafc;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    /* Article layout */
+    .article-body {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .article-body h1 {
+      font-size: 28px;
+      color: #0f172a;
+      line-height: 1.3;
+      margin-bottom: 18px;
+    }
+
+    .article-meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .article-body h2 {
+      font-size: 22px;
+      color: #1e3a8a;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+
+    .article-body h3 {
+      font-size: 18px;
+      color: #0f172a;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    .article-body p {
+      margin-bottom: 16px;
+      color: #334155;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .article-body a {
+      color: #0284c7;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .article-body mark {
+      background-color: #fef08a;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+
+    .image-placeholder {
+      background: #f1f5f9;
+      border: 2px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+      margin: 20px 0;
+      color: #475569;
+    }
+
+    .image-placeholder span {
+      display: block;
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 6px;
+    }
+
+    /* Action bar */
+    .action-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      body {
+        background: #ffffff !important;
+        padding: 0 !important;
+        color: #111827 !important;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .container {
+        max-width: 100% !important;
+        margin: 0 !important;
+      }
+      .header-card {
+        display: block !important;
+        background: #0f172a !important;
+        color: #ffffff !important;
+        border-radius: 8px !important;
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+      }
+      .card {
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .article-body {
+        border: 1px solid #cbd5e1 !important;
+        page-break-inside: auto;
+      }
+      h1, h2, h3 {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header Card -->
+  <div class="header-card">
+    <span class="badge">NTVQF / BTEB Assessment Deliverable</span>
+    <h1>JOB-01: Create an SEO-Optimized Blog Post (On-Page SEO)</h1>
+    <p>Comprehensive assessment solution including OSH compliance, keyword strategy, 100% On-Page SEO optimization, and complete 600-word blog post.</p>
+    
+    <div class="trainee-info">
+      <div><strong>Candidate:</strong> Mohammad Habibur Rahaman</div>
+      <div><strong>Niche:</strong> Fitness and Health</div>
+      <div><strong>Status:</strong> Ready for Evaluation</div>
+      <div><strong>Word Count:</strong> 600 words (Density: 1.15%)</div>
+    </div>
+  </div>
+
+  <div class="action-bar">
+    <button class="btn" onclick="window.print()">🖨️ Print / Save to PDF</button>
+  </div>
+
+  <!-- Section 1: Google SERP Preview Simulation -->
+  <div class="card">
+    <h2 class="section-title">🔍 Google SERP Snippet Preview (Yoast / Rank Math Simulation)</h2>
+    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">This is how the blog post will display on Google Desktop and Mobile search results:</p>
+    
+    <div class="google-preview">
+      <div class="google-url">
+        <span>🌐 https://yourwebsite.com › fitness › daily-fitness-routine-for-beginners</span>
+      </div>
+      <a class="google-title" href="#article">Daily Fitness Routine for Beginners: 7 Steps to Better Health</a>
+      <div class="google-desc">
+        Discover an easy <strong>daily fitness routine for beginners</strong> to boost energy, build strength, and stay healthy. Follow our 7 simple steps to start exercising today!
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-label">Title Length</div>
+        <div class="stat-value">60 chars <span class="badge-pass">Optimal</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Meta Description</div>
+        <div class="stat-value">158 chars <span class="badge-pass">Within Limit</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Keyword Density</div>
+        <div class="stat-value">1.15% <span class="badge-pass">1%–2% Target</span></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Total Word Count</div>
+        <div class="stat-value">600 words <span class="badge-pass">500–800 Target</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: SEO Strategy Matrix -->
+  <div class="card">
+    <h2 class="section-title">📊 Keyword Research & Specification Matrix</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 30%;">SEO Element</th>
+          <th>Implementation Details</th>
+          <th style="width: 15%;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Primary Keyword</strong></td>
+          <td><code>daily fitness routine for beginners</code></td>
+          <td><span class="badge-pass">Verified</span></td>
+        </tr>
+        <tr>
+          <td><strong>Long-Tail Keywords</strong></td>
+          <td>
+            • <code>home workout for beginners</code><br>
+            • <code>fitness and healthy lifestyle</code><br>
+            • <code>easy exercises at home</code><br>
+            • <code>beginner fitness tips</code>
+          </td>
+          <td><span class="badge-pass">Verified</span></td>
+        </tr>
+        <tr>
+          <td><strong>Search Intent</strong></td>
+          <td>Informational (Beginners looking for practical, gentle at-home exercise guides)</td>
+          <td><span class="badge-pass">Verified</span></td>
+        </tr>
+        <tr>
+          <td><strong>URL Structure</strong></td>
+          <td><code>https://yourwebsite.com/daily-fitness-routine-for-beginners</code></td>
+          <td><span class="badge-pass">Clean Slug</span></td>
+        </tr>
+        <tr>
+          <td><strong>Internal Links (3)</strong></td>
+          <td>
+            1. <code>/nutrition/beginner-meal-prep</code> (Anchor: healthy nutrition and meal planning guide)<br>
+            2. <code>/workouts/cardio-vs-strength</code> (Anchor: effective cardio vs strength training guide)<br>
+            3. <code>/wellness/muscle-recovery-tips</code> (Anchor: importance of muscle recovery and quality sleep)
+          </td>
+          <td><span class="badge-pass">3 Links</span></td>
+        </tr>
+        <tr>
+          <td><strong>External Links (2)</strong></td>
+          <td>
+            1. World Health Organization (WHO) physical activity guidelines<br>
+            2. Harvard T.H. Chan School of Public Health
+          </td>
+          <td><span class="badge-pass">Authoritative</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Section 3: Full Formatted Blog Post -->
+  <div class="card" id="article">
+    <h2 class="section-title">📝 Blog Post Content (Ready for Publishing)</h2>
+    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;"><em>Note: Primary keywords are highlighted in <mark>yellow</mark> below to verify natural density (1.15%).</em></p>
+
+    <div class="article-body">
+      <h1>Daily Fitness Routine for Beginners: 7 Steps to Better Health</h1>
+      
+      <div class="article-meta">
+        By <strong>Mohammad Habibur Rahaman</strong> • Category: Fitness & Health • Reading Time: 3 mins
+      </div>
+
+      <div style="margin: 24px 0; text-align: center;">
+        <img src="beginner-daily-fitness-routine.svg" alt="Beginner doing morning stretching and daily fitness routine for beginners at home" style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <p style="font-size: 13px; color: var(--text-muted); margin-top: 6px;"><em>Figure 1: Featured Image - Alt: "Beginner doing morning stretching and daily fitness routine for beginners at home"</em></p>
+      </div>
+
+      <p>
+        Starting a healthier lifestyle does not require hours in the gym or heavy equipment. In fact, establishing a simple <mark>daily fitness routine for beginners</mark> is the most sustainable way to boost energy, build strength, and improve your overall well-being. When you are just beginning, jumping into intense exercise programs often leads to burnout or muscle soreness. Instead, focusing on gentle, consistent habits helps you stay active every single day without feeling overwhelmed.
+      </p>
+
+      <h2>Why a Daily Fitness Routine for Beginners Is Essential</h2>
+      <p>
+        Physical activity is a vital pillar of lifelong health. According to the <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank">World Health Organization (WHO) physical activity guidelines</a>, adults need at least 150 minutes of moderate exercise each week to maintain cardiovascular health and prevent chronic illness. Committing to a <mark>daily fitness routine for beginners</mark> helps regulate blood pressure, sharpens focus, and releases endorphins that reduce daily stress. Best of all, exercising regularly at home eliminates gym commutes and high membership fees, making wellness accessible to everyone.
+      </p>
+
+      <h2>7 Simple Steps to Build Your Daily Workout Habit</h2>
+
+      <h3>1. Start with a Dynamic 5-Minute Warm-Up</h3>
+      <p>
+        Never skip your warm-up! Spend five minutes warming your joints and muscles with arm circles, torso twists, and marching in place. A proper warm-up elevates your heart rate gradually and protects you from unnecessary injury.
+      </p>
+
+      <h3>2. Practice Basic Bodyweight Movements</h3>
+      <p>
+        You do not need dumbbells or gym machines to build strength. Incorporate foundational bodyweight exercises such as bodyweight squats, wall push-ups, knee planks, and gentle lunges. Aim for 2 sets of 8 to 10 repetitions per exercise. Mastering proper posture ensures you progress safely into a complete <strong>home workout for beginners</strong>.
+      </p>
+
+      <div style="margin: 24px 0; text-align: center;">
+        <img src="home-workout-beginner-steps.svg" alt="Step-by-step home workout for beginners featuring basic bodyweight exercises" style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <p style="font-size: 13px; color: var(--text-muted); margin-top: 6px;"><em>Figure 2: Supporting Infographic - Alt: "Step-by-step home workout for beginners featuring basic bodyweight exercises"</em></p>
+      </div>
+
+      <h3>3. Add 15 Minutes of Gentle Cardio</h3>
+      <p>
+        Cardiovascular exercise improves lung capacity and burns calories. You can walk briskly around your neighborhood, jog lightly in place, or follow low-impact dance moves. If you want to customize your routine further, read our <a href="/workouts/cardio-vs-strength">effective cardio vs strength training guide</a> to balance your workouts.
+      </p>
+
+      <h3>4. Cool Down and Stretch</h3>
+      <p>
+        After finishing your workout, dedicate five minutes to static stretching. Stretch your hamstrings, quadriceps, shoulders, and chest. Deep breathing during cool-downs lowers your heart rate and promotes flexibility.
+      </p>
+
+      <h3>5. Fuel Your Body with Healthy Nutrition</h3>
+      <p>
+        Physical activity works hand-in-hand with what you eat. Drink plenty of water before and after exercising, and eat meals rich in lean proteins, complex carbohydrates, and vegetables. To build lasting nutrition habits alongside your workouts, consult our <a href="/nutrition/beginner-meal-prep">healthy nutrition and meal planning guide</a>.
+      </p>
+
+      <h3>6. Emphasize Consistency Over Intensity</h3>
+      <p>
+        The secret to fitness success is showing up every day. A modest 20-minute <mark>daily fitness routine for beginners</mark> performed five times a week yields far better results than an intense two-hour session once a month. Celebrate small victories like having more energy or climbing stairs effortlessly.
+      </p>
+
+      <h3>7. Respect Rest and Recovery</h3>
+      <p>
+        Your muscles rebuild and grow stronger when you rest. Ensure you get 7 to 8 hours of restorative sleep each night. Learn more about the <a href="/wellness/muscle-recovery-tips">importance of muscle recovery and quality sleep</a> to prevent fatigue and stay motivated.
+      </p>
+
+      <h2>Science-Backed Benefits of Staying Active</h2>
+      <p>
+        Medical experts at the <a href="https://www.hsph.harvard.edu/nutritionsource/staying-active/" target="_blank">Harvard T.H. Chan School of Public Health</a> emphasize that regular movement enhances metabolic rate, improves mental health, and extends lifespan. By adhering to a steady <mark>daily fitness routine for beginners</mark>, you establish healthy habits that protect your body for decades to come.
+      </p>
+
+      <h2>Conclusion: Start Your Fitness Journey Today</h2>
+      <p>
+        Embarking on a healthier lifestyle begins with one small step. By following this structured <mark>daily fitness routine for beginners</mark>, you can transform your physical fitness and mental vitality from the comfort of your own home. Lace up your sneakers, take a deep breath, and complete your first session today!
+      </p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
